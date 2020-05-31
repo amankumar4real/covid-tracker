@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="first.css">
+    </head>
+    <body class=" color_1">
+
+        <div class="container-fluid">
+
+            <div class="row mx-1 mt-2 mb-5 shadow">
+
+                <div class="col-12 bg-light text-center">
+                  <img class="img-fluid float-left" id="press_me" style="max-width: 6rem" src="images/2b52899f65e104810ce84e7514d7b9c4_cartoon-earth-transparent-png-clipart-free-download-ywd_600-560.png" class="card-img" alt="...">
+                  <div class="card-body">
+                    <h1 class="card-title text-center font-weight-bold"><span class="red">COVID</span>19 METER</h1>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid"></div>
+
+            <div class="row m-auto p-5 vis mt-5" id="hidden">
+
+                  <div class="card rounded m-auto bg-dark" style="width: 30rem;">
+
+                    <img id="flag" src="" class="card-img shadow img-fluid m-auto">
+                    <h1 id="con_name" class="text-light font-weight-bold mt-2 text-center"></h1>
+
+                    <div class="card-body">
+
+                        <div class="container-fluid row text-center m-auto">
+
+                            <div class="col-12 ">
+                                <h4 class="card-title text-white">TOTAL CONFIRM</h4>
+                                <h2 class="card-text text-warning font-weight-bold mb-" id="tc"></h2>
+                    
+                                <h4 class="card-title text-white">NEW CONFIRM</h4>
+                                <h2 class="card-text text-warning font-weight-bold" id="nc"></h2>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <h4 class="card-title text-white">TOTAL DEATHS</h4>
+                                <h2 class="card-text text-danger font-weight-bold mb-3" id="td"></h2>
+
+                                <h4 class="card-title text-white">NEW DEATHS</h4>
+                                <h2 class="card-text text-danger font-weight-bold " id="nd"></h2>
+                            </div>
+
+                            <div class="col-12 mt-5">
+                                <h4 class="card-title text-white">TOTAL RECOVERED</h4>
+                                <h2 class="card-text text-success font-weight-bold mb-3" id="tr"></h2>
+
+                                <h4 class="card-title text-white">NEW RECOVERED</h4>
+                                <h2 class="card-text text-success font-weight-bold" id="nr"></h2>
+                        </div>
+
+                        </div>
+
+                    </div>
+                  </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-fluid mt-4" id="here">
+
+            <div class=" row card bg-dark m-auto text-center" style="max-width: 25rem;">
+                <div class="card-header text-light">WORLD CASES</div>
+                <div class="card-body">
+
+                    <div class=" card text-white bg-warning m-3" style="max-width: 25rem;">
+                        <div class="card-body">
+                          <h3 class="card-title">TOTAL CASES</h3>
+                          <h1 class="card-text text-dark font-weight-bold" id="tot"></h1>
+                        </div>
+                    </div>
+
+                    <div class=" card text-white bg-danger m-3" style="max-width: 25rem;">
+                        <div class="card-body">
+                          <h3 class="card-title">DEATHS</h3>
+                          <h1 class="card-text text-dark font-weight-bold" id="death"></h1>
+                        </div>
+                    </div>
+
+                    <div class=" card text-white bg-success m-3" style="max-width: 25rem;">
+                        <div class="card-body">
+                          <h3 class="card-title">TOTAL RECOVERED</h3>
+                          <h1 class="card-text text-dark font-weight-bold" id="rec"></h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <form class="col-6 offset-3 mt-5">
+                    <div class="form-group">
+                      <label for="Country_name"></label>
+                      <input type="text" class="form-control bg-transparent text-light" id="cou" placeholder="+ Search By Country">
+                    </div>
+                    <button type="submit" class="btn btn-danger">Search</button>
+                  </form>
+            </div>
+
+            <div class="row">
+                <div class="col-6 card offset-3 my-4 bg-light" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">SYMPTOMS</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">-Google</h6>
+                      <p class="card-text">People may be sick with the virus for 1 to 14 days before developing symptoms. The most common symptoms of coronavirus disease (COVID-19) are fever, tiredness, and dry cough. Most people (about 80%) recover from the disease without needing special treatment.
+                        More rarely, the disease can be serious and even fatal. Older people, and people with other medical conditions (such as asthma, diabetes, or heart disease), may be more vulnerable to becoming severely ill.</p>
+                      <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" class="card-link">Read Here</a>
+                    </div>
+                  </div>
+
+                  <div class=" col-6 card offset-3 bg-light" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">PREVENTION</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">-Google</h6>
+                      <p class="card-text">You can protect yourself and help prevent spreading the virus to others if you:
+                        <ul>
+                            <li>Wash your hands regularly for 20 seconds, with soap and water or alcohol-based hand rub</li>
+                            <li>Cover your nose and mouth with a disposable tissue or flexed elbow when you cough or sneeze</li>
+                            <li>Avoid close contact (1 meter or 3 feet) with people who are unwell</li>
+                            <li>Stay home and self-isolate from others in the household if you feel unwell</li>
+                        </ul>
+                        </p>
+                      <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public" class="card-link">Read Here</a>
+                    </div>
+                  </div>
+            </div>
+
+              <div class="row  m-auto">
+                  <div class="col-8 offset-2 mt-5">
+
+                      <h1 class="font-weight-bold text-center text-light">CURRENT STATS</h1>
+
+                      <table class="table table-responsive table-striped table-dark">
+                          <thead>
+                            <tr>
+                              <th scope="col">#</th>
+                              <th scope="col">COUNTRY</th>
+                              <th scope="col">TOTAL CONFIRMED</th>
+                              <th scope="col">NEW CONFIRMED</th>
+                              <th scope="col">TOTAL DEATHS</th>
+                              <th scope="col">NEW DEATHS</th>
+                              <th scope="col">TOTAL RECOVERED</th>
+                              <th scope="col">NEW RECOVERED</th>
+                            </tr>
+                          </thead>
+                          <tbody id="app_here">
+                          </tbody>
+                        </table>
+
+                  </div>
+              </div>
+
+              <div class="row m-auto">
+                <div class="col-3 offset-4 m-auto">
+                  <nav aria-label="...">
+                    <ul class="pagination" id="pages">
+            
+                    </ul>
+                </nav>
+              </div>
+              </div>
+
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="first.js"></script>
+
+
+    </body>
+</html>
