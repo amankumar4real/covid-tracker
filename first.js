@@ -107,22 +107,29 @@ var form=document.querySelector("form")
 
 form.addEventListener("submit",function(){
     event.preventDefault()
-    var cont_name=$("#cou").val()
+    var cont_name=$("#cou")
 
-    search_by_cou(cont_name)
+
+
+    search_by_cou(cont_name.val())
 })
 
 function search_by_cou(data){
     // console.log(main_data["Countries"][57]["Country"])
     let len= main_data["Countries"].length
     curr_cou=data
+    var new_data = []
 
     for(var i=0; i<len; i++){
         if(main_data["Countries"][i]["Country"].toLowerCase()==data.toLowerCase()){
-            new_data=main_data["Countries"][i]
-            show(new_data)
+            new_data.push(main_data["Countries"][i])
+            show(new_data[0])
         }
     }
+    if(new_data.length == 0){
+        alert("Wrong Country!")
+    }
+    
 }
 
 function show(rev_data){
@@ -208,3 +215,43 @@ function changePage(newPage){
     liNew.setAttribute('class', 'page-item active')
     loadData()
 }
+
+var inp = document.getElementById("cou")
+var list = document.getElementById("live")
+
+function make_list(dummy){
+    list.innerHTML = ""
+    for(var i = 0; i < dummy.length; i++){
+        if(i < 10){
+            var tr = document.createElement("tr")
+            var td = document.createElement("td")
+            td.innerHTML = dummy[i]["Country"]
+
+            tr.appendChild(td)
+
+            tr.addEventListener("click", function(event){
+                search_by_cou(event.target.textContent)
+            })
+
+            list.appendChild(tr)
+        }
+        
+    }
+}
+
+
+inp.addEventListener("input",(event) => {
+    var val = event.target.value
+
+    if(val && val.length > 0){
+        val = val.toLowerCase()
+
+        make_list(main_data["Countries"].filter(function(a){
+            return a.Country.toLowerCase().includes(val)
+        }))
+    }
+    else{
+        list.innerHTML = ""
+    }
+    
+})
